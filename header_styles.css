@@ -219,7 +219,7 @@ margin-top: -0.5vw;
 } 
 
 .overlay {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -391,6 +391,22 @@ margin-top: -0.5vw;
       margin-left: -3vw;
       margin-top: 2vw;
     }
+
+    .overlay-content {   
+      width: 40vw;
+      height: 80vw;
+    }
+    
+    .overlay-content-img {
+      width: 10vw;
+      margin-top: 1vw; 
+      margin-bottom: 0vw; 
+    }
+    
+    .overlay a {   
+      font-size: 5vw;
+      margin-bottom: 3vw;
+    } 
   }
 
 
