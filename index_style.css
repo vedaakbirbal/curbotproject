@@ -62,7 +62,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 .top-title {
   font-weight: bold;
-  font-size: 2.5vw;
+  font-size: 3.3vw;
   text-align: center;
   /* border: 1px solid #000; */
 }
@@ -152,6 +152,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-top: 10vw;
     margin-bottom: 10vw;
     height: 55vw;
+    width: 100%;
   } 
 
   .top-text {
@@ -163,7 +164,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   .top-title {
-    font-size: 3.5vw;
+    font-size: 5vw;
   }
 
   .top-title-2 {
@@ -247,19 +248,57 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 3.5vw;
   }
 
-  
-
-
-  @media only screen and (max-width: 325px) {    
+  @media only screen and (max-width: 479px) {    
    
     .chat-container {      
       margin-bottom: 8.4vw;
     }
 
+    .top-container {    
+      margin: 0;
+      margin-top: 10vw;
+      margin-bottom: 10vw;
+      height: 60vw;
+      width: 100%;
+    } 
+
+    .top-paragraph {
+      margin-bottom: 5vw;
+      margin-top: 3vw;
+    margin-left: 10vw;
+    }
+
+    .top-img {
+      height: 35vw;
+      margin-right: -8vw;
+      margin-top: 12.5vw;
+      margin-left: 2vw;
+    
+    }
+
+    .top-title {
+      margin-top: 2vw;
+      font-size: 5vw;
+      margin-left: 5vw;
+    }
+
+    .main-get-started-button {
+      padding:1vw;
+      margin-left: 10vw;
+    }
+  
+  
+   
   }
+  
+
+
+  
 
   
 }
+
+
 
 
 

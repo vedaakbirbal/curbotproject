@@ -23,7 +23,7 @@ header {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
   z-index: 1;
-  margin-bottom: 7vw;
+  margin-bottom: 3vw;
 }
 
 .header-title {
