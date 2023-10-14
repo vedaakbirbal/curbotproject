@@ -331,6 +331,10 @@ margin-top: -0.5vw;
     margin-left: -5vw;
   }
 
+  #menu-button:hover {
+    height: 6vw;
+  }
+
   .overlay-content {   
     width: 30vw;
     height: 50vw;
