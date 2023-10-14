@@ -8,10 +8,6 @@ body {
   color: white; 
 }
 
-/* Add styles for the overlay container and content */
-
-
-
 .top-container {
   display: grid;
   grid-template-columns: auto auto; 
