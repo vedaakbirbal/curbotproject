@@ -250,7 +250,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   
 
 
-  @media only screen and (max-width: 330px) {    
+  @media only screen and (max-width: 325px) {    
    
     .chat-container {      
       margin-bottom: 8.4vw;
