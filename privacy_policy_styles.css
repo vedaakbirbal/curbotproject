@@ -1,8 +1,7 @@
-body {
-    margin: 0;
-    padding-top: 8vw;
-    background-color: rgba(214, 214, 214, 0.95);
-  }  
+body {    
+  background-color: rgba(214, 214, 214, 0.95);
+}  
+
   
   .top-mid-container {
     display: grid;
