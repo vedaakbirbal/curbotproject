@@ -218,6 +218,63 @@ margin-top: -0.5vw;
   color: #bba947;
 } 
 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: 1;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.747);
+  width: 20vw;
+  height: 30vw;
+  border: 1px solid;
+  border-radius: 5%;
+}
+
+.overlay-content-img {
+  width: 4vw;
+  margin-top: 0.5vw;
+  border: 1px solid;
+  border-radius: 10%;
+}
+
+.overlay a {
+  display: block;
+  margin: 15px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1.8vw;
+  margin-bottom: 1.2vw;
+}
+
+.overlay a:last-child {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  /* background-color: rgba(255, 255, 255, 0.781); */
+  text-align: center;
+}
+
+.overlay a:hover {
+  /* text-decoration: underline; */
+  color: #ffcc00;
+}
+
+/* Add styles to make the overlay visible when active */
+.overlay.active {
+  display: block;
+}
+
 
 @media only screen and (max-width: 767px) 
 {
@@ -280,6 +337,51 @@ margin-top: -0.5vw;
     margin-left: -5vw;
   }
 
+  .overlay-content {   
+    width: 30vw;
+    height: 50vw;
+  }
+  
+  .overlay-content-img {
+    width: 7vw;
+    margin-top: 0.5vw; 
+    margin-bottom: 1vw; 
+  }
+  
+  .overlay a {   
+    font-size: 3vw;
+    margin-bottom: 2vw;
+  } 
+
+  @media only screen and (max-width: 700px) {
+    .overlay-content {       
+      height: 55vw;
+    }  
+  
+    
+  }
+
+  @media only screen and (max-width: 550px) {
+    
+    
+    .overlay-content {   
+      width: 35vw;
+      height: 65vw;
+    }
+    
+    .overlay-content-img {
+      width: 8vw;
+      margin-top: 1vw; 
+      margin-bottom: 1vw; 
+    }
+    
+    .overlay a {   
+      font-size: 3.5vw;
+      margin-bottom: 3vw;
+    } 
+  }
+
+ 
  
 
   @media only screen and (max-width: 497px) {
@@ -353,61 +455,60 @@ margin-top: -0.5vw;
   .header-edition-text {
     font-size: 1.6vw;   
   }
+
+  .overlay-content {   
+    width: 20vw;
+    height: 38vw;
+  }
+  
+  .overlay-content-img {
+    width: 4vw;
+    margin-top: 0.5vw; 
+    margin-bottom: 1vw; 
+  }
+  
+  .overlay a {   
+    font-size: 2vw;
+    margin-bottom: 2vw;
+  }  
+
+  @media only screen and (max-width: 1000px)
+  {
+    .overlay-content {   
+      width: 25vw;
+      height: 45vw;
+    }
+    
+    .overlay-content-img {
+      width: 5vw;
+      margin-top: 0.5vw; 
+      margin-bottom: 2vw; 
+    }
+    
+    .overlay a {   
+      font-size: 2.5vw;
+      margin-bottom: 2vw;
+    } 
+  }
+
+  @media only screen and (max-width: 800px)
+  {
+    .overlay-content {   
+      width: 30vw;
+      height: 50vw;
+    }
+    
+    .overlay-content-img {
+      width: 7vw;
+      margin-top: 0.5vw; 
+      margin-bottom: 1vw; 
+    }
+    
+    .overlay a {   
+      font-size: 3vw;
+      margin-bottom: 2vw;
+    } 
+  }
+
 }
 
-.overlay {
-  /* display: none; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); 
-  z-index: 1;
-}
-
-.overlay-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.747);
-  width: 20vw;
-  height: 30vw;
-  border: 1px solid;
-  border-radius: 5%;
-}
-
-.overlay-content-img {
-  width: 4vw;
-  margin-top: 0.5vw;
-  border: 1px solid;
-  border-radius: 10%;
-}
-
-.overlay a {
-  display: block;
-  margin: 15px 0;
-  color: white;
-  text-decoration: none;
-  font-size: 1.8vw;
-  margin-bottom: 1.2vw;
-}
-
-.overlay a:last-child {
-  color: rgb(255, 0, 0);
-  font-weight: bold;
-  /* background-color: rgba(255, 255, 255, 0.781); */
-  text-align: center;
-}
-
-.overlay a:hover {
-  /* text-decoration: underline; */
-  color: #ffcc00;
-}
-
-/* Add styles to make the overlay visible when active */
-.overlay.active {
-  display: block;
-}
