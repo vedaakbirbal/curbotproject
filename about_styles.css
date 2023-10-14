@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding-top: 8vw;
+    background-color: rgba(214, 214, 214, 0.95);
+  }  
+  
+  .top-mid-container {
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-areas: 
+        "top-mid-title"      
+        "top-mid-paragraph"; 
+    margin-left: 10vw;
+    width: 80vw;
+  }
+  
+  .top-mid-title{
+    grid-area: top-mid-title;
+    text-align: center;
+      padding: 1vw;
+      margin: 1vw;
+    font-size: 4vw;
+  }
+ 
+  
+  .top-mid-paragraph {
+    grid-area: top-mid-paragraph;
+    text-align: left;
+      padding: 1vw;
+      margin: 1vw;
+      font-size: 2vw;
+      margin-bottom: 10vw;
+  }
+
+  

@@ -1,0 +1,393 @@
+
+body {
+  margin: 0;
+  padding-top: 17.5vw;
+  background-color: rgba(196, 196, 196, 0.795);
+}
+
+header {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 17vw;
+  background-image: url(Images/header2.gif);
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "header-title menu-items";
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
+  z-index: 1;
+  
+}
+
+.header-title {
+  grid-area: header-title;
+  display: grid;
+  grid-template-columns: auto 10vw; 
+  grid-template-areas: 
+    "header-title-name header-edition"   
+    "header-title-name  header-edition";
+  align-items: center; 
+  background-color: transparent;
+  width: 50vw;
+  margin-top: -6vw;
+  margin-left: -3vw;
+  /* border: 1px solid #000000; */
+}
+
+.header-title-name {
+  grid-area: header-title-name; 
+  display: inline-flex;
+margin-left: 10vw;
+margin-top: -0.5vw;
+  /* border: 1px solid #000000; */}
+
+
+
+.header-title-img {
+  grid-area: header-title-img;  
+  height: 5vw;    
+  overflow: hidden;
+  border-radius: 15%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: transform 2s ease; 
+}
+
+.header-title-img:hover {
+  transform: scaleX(-1); 
+}
+
+.header-title-text {
+  font-size: 2.5vw;
+  margin-top: 2.2vw;  
+  margin-left: 0.7vw;
+}
+
+.header-edition {
+  grid-area: header-edition;
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+  margin-top: 1vw;
+  margin-left: -3vw;
+  /* border: 1px solid #000000; */
+}
+
+.header-edition-text{
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3vw;
+  /* border: 1px solid #000000; */
+}
+
+.header-edition-image {
+  width: 10vw;
+  border-radius: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.9vw;
+  overflow: hidden; /* To prevent link border from expanding the container */
+}
+
+.header-edition-image a {
+  display: block; /* Make the link a block-level element to fill the container */
+  width: 100%;
+  height: 100%;
+}
+
+.header-edition-image img {
+  width: 100%;
+  transform: scale(1.1);
+  height: auto;
+  transition: transform 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.header-edition-image:hover img {
+  transform: scale(1.2); /* Enlarge the image on hover */
+}
+
+
+.menu {
+  grid-area: menu-items;    
+  display: grid;
+  grid-template-columns: auto; 
+  grid-template-areas: 
+    "menu-row1"   
+    "menu-row2"
+    "menu-row3"
+    "menu-row4"; 
+  background-color: transparent;
+  width: 20vw;
+  height: 15vw;
+  margin-top: 0.3vw;
+  margin-left: 2vw;
+ 
+
+ 
+}
+
+.menu-items {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent; 
+  border: none;
+ 
+ 
+  transition: background-color 0.3s ease; 
+  height: 2.5vw;
+  display: flex;
+  align-items: center; 
+  font-size: 2vw;
+  
+}
+
+.menu-nums {
+  font-size: 1.7vw;
+  align-items: end;
+  justify-content: end;
+  margin-right: 1vw;
+  margin-top: 0.3vw;
+  color: rgba(255, 255, 255, 0.548);
+}
+
+.menu-items:hover {
+  background-color: #ffffff; 
+}
+
+
+
+
+.menu-row1 {
+  grid-area: menu-row1;
+  display: inline-flex;
+}
+
+.menu-row2 {
+  grid-area: menu-row2;
+  display: inline-flex;
+}
+
+.menu-row3 {
+  grid-area: menu-row3;
+  display: inline-flex;
+}
+
+.menu-row4 {
+  grid-area: menu-row4;
+  display: inline-flex;
+}
+
+#menu-button {
+  grid-area: menu-button;
+  color: #6A9955;
+}
+
+#contact-button {
+  color: #BF55EC;
+  padding: 0;
+}
+
+#about-button {
+  color: #B37E6A;
+  padding: 0;
+}
+
+#topics-button {
+  color: #569CD6;
+  padding-left: 0;
+}
+
+#faq-button {
+  color: #00d3e2;
+}
+
+#lets-button {
+  color: #569CD6;
+  padding-left: 0;
+}
+
+#get-started-button {
+  color: #bba947;
+} 
+
+
+@media only screen and (max-width: 767px) 
+{
+
+ 
+  
+  body {
+    padding-top: 35vw;
+  }  
+
+  header {
+    height: 28vw;
+  }
+
+  .top-container {    
+    margin: 0;
+    margin-bottom: 5vw;
+    height: 48vw;
+  }
+
+  .header-edition {
+    display: none;
+  }
+
+  .header-title-name {
+    margin-left: 10vw;
+    margin-top: -4.7vw;
+  }
+
+  .header-title-img {
+    height: 10vw;   
+  }
+
+  .header-title-text {
+    font-size: 4.2vw;
+    margin-top: 5vw;
+    margin-left: 1.4vw;
+  }
+
+  .header-title {
+    /* margin-left: 14vw; */
+    margin-top: -6vw;
+  }
+
+  .menu-row1 span,
+  .menu-row2,
+  .menu-row3,
+  .menu-row4 {
+    display: none;
+  }
+
+  .menu {
+    /* border:1px solid; */
+    margin-right: -20vw;
+  }
+
+  #menu-button {
+    font-size: 6vw;
+    margin-top: 8vw;
+    margin-left: -5vw;
+  }
+
+ 
+
+  @media only screen and (max-width: 497px) {
+    body {
+      padding-top: 35vw;
+     }
+    
+    .header-title {
+      margin-left: 3vw;
+    }
+
+    .menu {
+      margin-left: -3vw;
+      margin-top: 2vw;
+    }
+  }
+
+
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+ body {
+  padding-top: 24vw;
+ }
+  
+  
+  header {
+    height: 22vw;
+  }
+  
+  .menu {
+    margin-left: 9vw;
+    height: 20vw;    
+    
+  }
+
+  .menu-items{
+    font-size: 2.5vw;
+  }
+  
+  .menu span {
+    font-size: 2.1vw;
+    margin-top: 0.1vw;
+    margin-right: 1.1vw;
+  }
+
+  .header-title-name {
+    margin-top: -2vw;
+  }
+
+  .header-title-img {
+    height: 7.5vw;
+  }
+
+  .header-title-text {
+    margin-top: 4vw;
+    font-size: 3vw;
+  }
+
+  .header-edition {
+    margin-top: -0.5vw;
+    margin-left: -0.4vw;
+  }
+
+  .header-edition-image{
+    width: 13vw;
+    margin-left: -0.5vw;
+  }
+
+  .header-edition-text {
+    font-size: 1.6vw;   
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  z-index: 1;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.747);
+}
+
+.overlay a {
+  display: block;
+  margin: 15px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.overlay a:hover {
+  text-decoration: underline;
+}
+
+/* Add styles to make the overlay visible when active */
+.overlay.active {
+  display: block;
+}
