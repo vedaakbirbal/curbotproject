@@ -47,7 +47,7 @@
             <div class="menu-row4">
                 <span class="menu-nums">7</span>
                 <button class="menu-items" id="lets-button">let's</button>
-                <button class="menu-items" id="get-started-button">getStarted()</button>
+                <button class="main-get-started-button" onclick="redirectToStreamlit()">GET STARTED</button>
             </div>          
         </div>
     </header>
@@ -104,6 +104,13 @@
             <p><a href="terms_conditions.html">Terms & <br>Conditions</a></p>
           </div>  
       </footer>
+
+      <script>
+        function redirectToStreamlit() {
+            // Redirect to your Streamlit app URL when the button is clicked
+            window.location.href = 'http://localhost:8501';  // Change this URL to match your Streamlit app's URL
+        }
+    </script>
 
 </body>
 
