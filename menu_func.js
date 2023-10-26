@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const topicsButton = document.getElementById("topics-button");    
     const aboutButton = document.getElementById("about-button");           
     const faqButton = document.getElementById("faq-button");           
-    const resourcesButton = document.getElementById("get-started-button"); 
+    // const resourcesButton = document.getElementById("get-started-button"); 
     const menuButton = document.getElementById("menu-button");
     const menuOverlay = document.getElementById("menu-overlay");
     const closeMenuLink = document.getElementById("close-menu");
@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "FAQ.html";
     });
 
-    resourcesButton.addEventListener("click", function () {
-        window.location.href = "Resources.html";
-    });
+    // resourcesButton.addEventListener("click", function () {
+    //     window.location.href = "Resources.html";
+    // });
 
    
 });
