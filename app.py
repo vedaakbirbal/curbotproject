@@ -21,7 +21,7 @@ def get_vectorstore():
 
     vector_store = Qdrant(
         client=client,
-        collection_name="QDRANT_COLLECTION_NAME",
+        collection_name=os.getenv("QDRANT_COLLECTION_NAME"),
         embeddings=embeddings,
     )
 
