@@ -17,7 +17,19 @@ document.addEventListener("DOMContentLoaded", function () {
           // Redirect to the destination
           window.location.href = destination;
         }, 0); // 300ms is the duration of the transition
-      }    
+    } 
+
+    const buttons = document.querySelectorAll('.common-hover');
+
+    buttons.forEach(button => {
+      button.addEventListener('mouseover', function () {
+        buttons.forEach(btn => btn.classList.add('hovered'));
+      });
+
+      button.addEventListener('mouseout', function () {
+        buttons.forEach(btn => btn.classList.remove('hovered'));
+      });
+    });
 
     // Event listener for the "Menu" button click
     menuButton.addEventListener("click", function () {
@@ -31,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         menuOverlay.classList.remove("active");
         });
 
+        
  
     contactButton.addEventListener("click", function () {
         fadeAndRedirect("contact.html");

@@ -27,7 +27,7 @@ body {
 .top-title {
   grid-area: top-title;
   font-weight: bold;
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 4rem);
   text-align: center;
   margin-top: 2vw;
   /* border: 1px solid #fafafa; */
@@ -43,7 +43,7 @@ body {
 }
 
 .top-paragraph {
-  font-size: clamp(0.75rem, 3vw, 2rem);
+  font-size: clamp(0.75rem, 3vw, 3rem);
   margin: 3%;
   height: auto;
   width: auto;
@@ -52,7 +52,7 @@ body {
 
 
 .top-img{ 
-  width: clamp(2rem, 40vmin, 11rem);  
+  width: clamp(2rem, 40vmin, 15rem);  
   /* border: 1px solid #ffffff; */
   margin: 0;
   margin-right: 2vw;

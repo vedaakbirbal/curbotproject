@@ -68,7 +68,7 @@
 
 .quick-menu-links a:hover,
 .legal a:hover {
-  color: #3498db;
+  color: #07f007;
 }
 
 .copyright {
@@ -92,7 +92,9 @@
   width: auto;
   margin: 0;
   margin-right: 10px;
-  /* border: 1px solid; */
+  opacity: 1;
+  border: 1px solid;
+  border-radius: 10px;
 }
 
 .heart {

@@ -44,8 +44,8 @@
             </div>
             <div class="menu-row4">
                 <span class="menu-nums">7</span>
-                <button class="menu-items" id="lets-button">let's</button>
-                <button class="menu-items" id="get-started-button" onclick="redirectToStreamlit()">getStarted()</button>
+                <button class="menu-items common-hover" id="lets-button">let's</button>
+  <button class="menu-items common-hover" id="get-started-button" onclick="redirectToStreamlit()">getStarted()</button>
             </div>          
         </div>
     </header>
@@ -119,6 +119,12 @@
         function redirectToStreamlit() {
             // Redirect to your Streamlit app URL when the button is clicked
             window.location.href = 'http://localhost:8501';  // Change this URL to match your Streamlit app's URL
+        }
+        function hoverEffect() {
+            document.getElementById("get-started-button").classList.add("hovered");
+        }
+        function hoverEffect1() {
+            document.getElementById("lets-button").classList.add("hovered");
         }
     </script>
 
