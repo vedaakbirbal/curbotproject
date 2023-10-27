@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home-Want to learn C++ </title>
-<link rel="stylesheet" href="terms_conditions_styles.css">
 <link rel="stylesheet" href="header_styles.css">
+<link rel="stylesheet" href="terms_conditions_styles.css">
 <link rel="stylesheet" href="footer_styles.css">
 <script defer src="menu_func.js"></script>
 </head>
@@ -65,47 +65,57 @@
           <a href="#" id="close-menu">Close</a>
         </div>
       </div>
-    <div class="top-mid-container">
-        
+      
+      <div class="top-mid-container">
         <h2 class="top-mid-title"> TERMS AND CONDITIONS </h2>   
-        
-        <span class="top-mid-paragraph" >Lorem ipsum dolor sit amet consectetur adipiscing elit
-            rutrum, dis lobortis consequat mauris eleifend suscipit
-            suspendisse nec congue, blandit platea vivamus
-            ullamcorper primis aptent netus. Facilisis dapibus fusce
-            cras volutpat blandit commodo donec lobortis erat
-            curabitur mi suspendisse cubilia dui sapien habitant
-            quisque nulla ultrices, fermentum imperdiet vestibulum
-            quis duis rutrum massa scelerisque. Duis sagittis libero
-            Lorem ipsum dolor sit amet consectetur adipiscing elit
-            rutrum, dis lobortis consequat mauris eleifend suscipit
-            suspendisse nec congue, blandit platea vivamus
-            ullamcorper primis aptent netus. Facilisis dapibus fusce
-            cras volutpat blandit commodo donec lobortis erat
-            curabitur mi suspendisse cubilia dui sapien habitant
-            quisque nulla ultrices, fermentum imperdiet vestibulum
-            quis duis rutrum massa scelerisque. Duis sagittis libero
-            Lorem ipsum dolor sit amet consectetur adipiscing elit
-            rutrum, dis lobortis consequat mauris eleifend suscipit
-            suspendisse nec congue, blandit platea vivamus
-            ullamcorper primis aptent netus. Facilisis dapibus fusce
-            cras volutpat blandit commodo donec lobortis erat
-            curabitur mi suspendisse cubilia dui sapien habitant
-            quisque nulla ultrices, fermentum imperdiet vestibulum
-            quis duis rutrum massa scelerisque. Duis sagittis libero
-            Lorem ipsum dolor sit amet consectetur adipiscing elit
-            rutrum, dis lobortis consequat mauris eleifend suscipit
-            suspendisse nec congue, blandit platea vivamus
-            ullamcorper primis aptent netus. Facilisis dapibus fusce
-            cras volutpat blandit commodo donec lobortis erat
-            curabitur mi suspendisse cubilia dui sapien habitant
-            quisque nulla ultrices, fermentum imperdiet vestibulum
-            quis duis rutrum massa scelerisque. Duis sagittis libero
+        <span class="top-mid-paragraph">            
+            <br>
+            <strong>1. Acceptance of Terms</strong>
+            <br><br>
+            By accessing and using the Curbot: C++ Chatbot Learning Website, you agree to be bound by these Terms and Conditions. If you do not agree to these Terms and Conditions, please do not use the Website.
+            <br><br>
+            <strong>2. Use of the Website</strong>
+            <br><br>
+            <strong>Age Restrictions:</strong> The Website is intended for use by individuals attending the University of the West Indies. If you are under the age of 13, please seek parental or guardian consent.
+            <br>
+            <strong>Educational Focus:</strong> The Website and its chatbot Curbot are dedicated exclusively to answering questions related to the C++ programming language. Users agree to use Curbot's responses solely for educational purposes and not for any illegal or unauthorized activities.
+            <br>
+            <strong>Feedback:</strong> We appreciate feedback, comments, ideas, proposals, and suggestions for improvements. If you provide any of these things, we may use it without restriction or compensation to you.
+            <br><br>
+            <strong>3. User Conduct</strong>
+            <br><br>
+            <strong>Respectful Behaviour:</strong> Users must engage respectfully with Curbot and other users and must not engage in activities that may be considered harmful, offensive, or disruptive to others.
+            <br>
+            <strong>Privacy:</strong> Conversations with Curbot are private and will not be accessed by other users. We do not collect or store user conversations or personal data.
+            <br><br>
+            <strong>4. Ownership and Intellectual Property</strong>
+            <br><br>
+            <strong>Content:</strong> All content on the Website, including text, images, is the intellectual property of the Website owner. You may not use this content without permission.
+            <br><br>
+            <strong>5. Disclaimers and Limitations</strong>
+            <br><br>
+            <strong>Educational Use:</strong> The Website's content is provided for educational purposes. While every effort is made to ensure accuracy, the Website makes no guarantees about the accuracy or completeness of the information provided by Curbot.
+            <br>
+            <strong>OpenAI API:</strong> Curbot may use the OpenAI API to provide information that is not immediately available. The Website owner is not responsible for the accuracy or suitability of the information retrieved from the API.
+            <br><br>
+            <strong>6. Changes to Terms and Conditions</strong>
+            <br><br>
+            The Website owner reserves the right to modify or revise these Terms and Conditions at any time without notice. It is your responsibility to periodically review these terms.
+            <br><br>
+            <strong>7. Governing Law and Jurisdiction</strong>
+            <br><br>
+            These Terms and Conditions are governed by the laws of Trinidad and Tobago. Any legal disputes shall be resolved in the courts of Trinidad and Tobago.
+            <br><br>
+            <strong>8. Contact Information</strong>
+            <br><br>
+            If you have any questions or concerns about these Terms and Conditions, please <a href="Contact-Us-Link">Contact Us</a>.
+            <br><br>
+            <input type="checkbox" id="acceptCheckbox"> I have read and accept the Terms and Conditions
+            <br>
+            <button onclick="acceptTerms()">Accept</button>
         </span>
-    </div> 
-
-
-
+    </div>
+   
     <footer class="footer-container">
         <div class="copyright">
             <img class="bot-img-1" src="Images/CurBot chatbot.png" alt="C++ Logo">
@@ -117,5 +127,16 @@
             <p><a href="terms_conditions.html">Terms & <br>Conditions</a></p>
           </div>  
       </footer>
+
+      <script>
+        function acceptTerms() {
+            if (document.getElementById('acceptCheckbox').checked) {
+                alert("Terms and Conditions accepted!");
+                // Add further actions upon acceptance if needed
+            } else {
+                alert("Please read and accept the Terms and Conditions.");
+            }
+        }
+    </script>
 </body> 
 </html>
