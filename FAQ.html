@@ -68,11 +68,60 @@
 
 <div class="top-mid-container">
         
-    <h2 class="top-mid-title"> FREQUENTLY ASKED QUESTIONS (FAQ): </h2>   
+    <span class="top-mid-title"> Frequently Asked Questions</span>   
     
-    <span class="top-mid-paragraph" > Q.<br> A. <br><br> Q.<br>A.
-      <br> <br> Q.<br>A. <br> <br> Q.<br>A. <br> <br> Q.<br>A. <br> <br> 
-    </span>
+    <div class="dropdown">
+      <span class="question" onclick="toggleAnswer(this)">
+        <strong data-color-text="1">What topics does the C++ chatbot cover?<span class="arrow"></span></strong>
+          <div class="answer">
+              Our chatbot covers the fundamental syntax and structure of the C++ programming language. You can learn more here.
+          </div>
+      </span>
+  
+      <span class="question" onclick="toggleAnswer(this)">
+        <strong data-color-text="2">Can the chatbot help with coding problems and errors?<span class="arrow"></span></strong>
+          <div class="answer">
+              No, the chatbot is meant to be a resource for learning and answering questions related to C++. It does not provide code corrections or suggestions.
+          </div>
+      </span>
+  
+      <span class="question" onclick="toggleAnswer(this)">
+        <strong data-color-text="3">How does the chatbot keep its content up to date with the latest C++ standards?<span class="arrow"></span></strong>
+          <div class="answer">
+              Curbot's content is regularly updated to align with the latest C++ standards and best practices. It leverages a combination of stored information in a vector database and real-time access to OpenAI's GPT-3 API, ensuring that you receive accurate and current information regarding C++ programming.
+          </div>
+      </span>
+  
+      <span class="question" onclick="toggleAnswer(this)">
+        <strong data-color-text="4">Can I interact with the chatbot through voice or text commands?<span class="arrow"></span></strong>
+          <div class="answer">
+              As of now, Curbot primarily supports text-based interactions. You can type your questions or commands, and Curbot will provide text-based responses. Voice commands are not supported at this time.
+          </div>
+      </span>
+  
+      <span class="question" onclick="toggleAnswer(this)">
+        <strong data-color-text="5">Is there a way to continue previous sessions with the chatbot?<span class="arrow"></span></strong>
+          <div class="answer">
+              Yes, you can continue your conversation within the same session. However, please note that once you refresh the page, the chat history is lost as it does not retain conversation history across sessions.
+          </div>
+      </span>
+  
+      <span class="question" onclick="toggleAnswer(this)">
+        <strong data-color-text="6">Is there a time limit for using the chatbot or a maximum number of interactions allowed?<span class="arrow"></span></strong>
+          <div class="answer">
+              There is no specific time limit for using Curbot, and you can interact with it as long as you need to. Additionally, there is no maximum number of interactions or questions. Curbot is available to assist you with your C++ learning journey whenever you have questions or require guidance.
+          </div>
+      </span>
+  
+      <span class="question" onclick="toggleAnswer(this)">
+          <strong data-color-text="7">What should I do if I encounter technical issues while using the chatbot?<span class="arrow"></span></strong>
+          <div class="answer">
+              If you encounter any technical issues while using the chatbot, please <a href="contact-us-link">Contact Us</a>. We are here to assist you with any technical problems or difficulties you may face while using Curbot. Your feedback and inquiries are important to us, and we will do our best to address and resolve any issues promptly.
+          </div>
+      </span>
+  </div>
+  
+  
 </div> 
 
 
@@ -87,7 +136,19 @@
       <p><a href="privacy_policy.html" >Privacy Policy</a></p>
       <p><a href="terms_conditions.html">Terms & <br>Conditions</a></p>
     </div>  
-</footer>  
+</footer>
+
+<script>
+  function toggleAnswer(element) {      
+      var answer = element.querySelector('.answer');
+      var arrow = element.querySelector('.arrow'); 
+      
+      answer.classList.toggle('show-answer');
+         
+      arrow.classList.toggle('arrow-up');
+  }
+</script>
+
 </body> 
 
 

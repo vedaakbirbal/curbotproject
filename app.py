@@ -95,6 +95,12 @@ def handle_userinput(user_question):
             
             st.write(bot_template.replace("{{MSG}}", message.content), unsafe_allow_html=True)
 
+def on_key_press(e):
+  # Clear the user input when the user hits Enter
+  if e.key == "Enter":
+    st.session_state["user_question"] = ""
+
+
 def main():
     load_dotenv()
     st.set_page_config(page_title="CurBot", page_icon="images/CurBot chatbot.png")
@@ -106,12 +112,10 @@ def main():
         st.session_state.chat_history = None
 
     st.header("Curriculum Bot")
-    user_question = st.text_input("ECNG 1009 Edition")
+    user_question = st.text_area("ECNG 1009 Edition", on_key_press=on_key_press("Enter"))
 
     if user_question:
-        handle_userinput(user_question)
-
-    
+        handle_userinput(user_question)    
 
     vectorstore = get_vectorstore()
 

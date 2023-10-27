@@ -42,3 +42,14 @@ user_template = '''
     <div class="message">{{MSG}}</div>
 </div>
 '''
+
+# script = """
+# <script>
+# document.addEventListener("keydown", function(e) {
+#     if (e.key === "Enter" && e.shiftKey) {
+#         var event = new Event("submit");
+#         document.dispatchEvent(event);
+#     }
+# });
+# </script>
+# """
