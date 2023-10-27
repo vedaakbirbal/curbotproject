@@ -115,10 +115,10 @@ header {
     "menu-row4"; 
   background-color: transparent;
   width: 40vw;
-  height: clamp(8.4rem, 17vw, 30rem);
+  height: clamp(8.5rem, 16vw, 20rem);
   /* margin-top: 0.3vw; */
   /* margin-left: 2vw; */
-  /* border: 1px solid black; */
+  /* border: 1px solid rgb(241, 241, 241); */
 }
 
 .menu-items {
@@ -130,9 +130,11 @@ header {
   transition: background-color 0.3s ease; 
   display: flex;
   align-items: center; 
-  font-size: clamp(1rem, 2vw, 3rem);  
-  font-family: 'Consolas';
+  font-size: clamp(1rem, 2vw, 3rem);
   border-radius: 5px;
+  height: auto;
+  padding: 0;
+  padding-right: 20px;
   /* border: 1px solid black; */
 }
 
@@ -141,12 +143,12 @@ header {
   flex-direction: column; 
   align-items: center;     
   justify-content: center; 
-  font-size: clamp(1.3rem, 1vw, 4rem);
+  font-size: clamp(1rem, 2vw, 3rem);
   margin-right: 1vw;
   color: rgba(255, 255, 255, 0.548);
   /* border: 1px solid black; */
-  padding: 3px;
-  padding-bottom: 5px;
+  /* padding: 2px; */
+  padding-right: 5px;
 }
 
 .menu-items:hover {
