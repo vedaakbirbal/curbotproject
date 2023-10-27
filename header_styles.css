@@ -276,6 +276,8 @@ header {
     /* margin-left: 3vw;*/
     margin-top: clamp(1.7rem, 1vw, 5rem); ; 
     font-size: 2rem;
+    margin-right: 3vw;
+    /* border: 1px solid black; */
   }
 
   /* header {
@@ -284,6 +286,29 @@ header {
 
   .header-title-name {
     margin-left: -15vw;
+    /* border: 1px solid black; */
+  }
+
+  .header-title-text {
+    font-size: 1.5rem;
+    margin-bottom: -4vw;
+  }
+
+  @media (width <= 286px) {
+
+    .header-title-text {
+      display: none;
+    }
+
+    #menu-button {
+      margin-left: -2vw;
+      margin-top: 13vw;
+    }
+
+    .header-title-img {
+      margin-left: 7vw;
+    }
+
   }
 
 }
