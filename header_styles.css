@@ -224,7 +224,7 @@ header {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.747);
   width: auto;
-  height: clamp(auto, 1vmin, 80dvh);
+  height: clamp(auto, 1vmin, 60dvh);
   border: 1px solid;
   border-radius: 10px;
   padding: clamp(0.25rem, 1vmin, 1rem);
