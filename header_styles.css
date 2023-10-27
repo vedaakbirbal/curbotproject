@@ -224,12 +224,12 @@ header {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.747);
   width: auto;
-  height: auto;
+  height: clamp(auto, 1vmin, 80vh);
   border: 1px solid;
   border-radius: 10px;
-  padding: clamp(0.25rem, 1vmax, 1rem);
-  padding-left: clamp(2rem, 1vmax, 4rem);
-  padding-right: clamp(2rem, 1vmax, 4rem);
+  padding: clamp(0.25rem, 1vmin, 1rem);
+  padding-left: clamp(2rem, 1vmin, 4rem);
+  padding-right: clamp(2rem, 1vmin, 4rem);
   /* margin: 5px; */
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
@@ -246,8 +246,8 @@ header {
   margin: 15px 0;
   color: white;
   text-decoration: none;
-  font-size: clamp(1.2rem, 3.5vmax, 1.5rem);
-  margin-bottom: clamp(1.2rem, 3.5vmax, 1.5rem);
+  font-size: clamp(1.2rem, 3.5vmin, 1.5rem);
+  margin-bottom: clamp(1.2rem, 3.5vmin, 1.5rem);
   text-align: center;
 }
 
