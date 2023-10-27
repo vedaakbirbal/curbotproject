@@ -244,7 +244,7 @@ header {
   margin: 15px 0;
   color: white;
   text-decoration: none;
-  font-size: clamp(0.75rem, 4vmin, 2rem);
+  font-size: clamp(0.75rem, 5.5vmin, 4rem);
   margin-bottom: 1.2vw;
   text-align: center;
 }
