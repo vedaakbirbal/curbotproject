@@ -23,6 +23,7 @@ header {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
   z-index: 1;
+  opacity: 0.9;
   /* margin-bottom: 3vw; */
   /* border: 1px solid #000000; */
 }
@@ -42,6 +43,7 @@ header {
   margin-top: -1vw;
   /* margin-left: 5vw; */
   /* border: 1px solid #000000; */
+  opacity: 1;
 }
 
 .header-title-name {
@@ -116,6 +118,7 @@ header {
   background-color: transparent;
   width: 40vw;
   height: clamp(8.5rem, 16vw, 20rem);
+  opacity: 1;
   /* margin-top: 0.3vw; */
   /* margin-left: 2vw; */
   /* border: 1px solid rgb(241, 241, 241); */
@@ -298,10 +301,10 @@ header {
 
   #menu-button {
     display: inline-flex;
-    /* margin-left: 3vw;*/
-    margin-top: clamp(1.7rem, 1vw, 5rem); ; 
+    margin-left: 5vw;
+    margin-top: clamp(2.5rem, 1vw, 5rem); 
     font-size: 2rem;
-    margin-right: 3vw;
+    
     /* border: 1px solid black; */
   }
 
