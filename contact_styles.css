@@ -1,17 +1,19 @@
 body {    
-  background-color: rgba(214, 214, 214, 0.95);
+  background-color: rgb(255, 255, 255);
 }  
 .contact-container {
-  max-width: 800px;
-  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
   border-radius: 8px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .contact-title {
-  font-size: 32px;
+  text-align: center;
+  font-size: clamp(1rem, 4vw, 3rem);
   color: #333;
   margin-bottom: 20px;
 }
@@ -68,6 +70,7 @@ body {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
 .contact-form button {

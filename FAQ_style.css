@@ -23,7 +23,7 @@ body {
 
 .top-mid-title {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 4rem); 
+  font-size: clamp(2rem, 4vw, 3rem); 
   color: #000000; 
   margin-top: 5vw;
   font-weight: bold;

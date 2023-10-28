@@ -112,7 +112,7 @@ def main():
         st.session_state.chat_history = None
 
     st.header("Curriculum Bot")
-    user_question = st.text_area("ECNG 1009 Edition", on_key_press=on_key_press("Enter"))
+    user_question = st.text_input("ECNG 1009 Edition")
 
     if user_question:
         handle_userinput(user_question)    
