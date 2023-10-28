@@ -3,12 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const topicsButton = document.getElementById("topics-button");    
     const aboutButton = document.getElementById("about-button");           
     const faqButton = document.getElementById("faq-button");           
-    const resourcesButton = document.getElementById("resource-container"); 
+    const resourcesButton = document.getElementById("resource-container");
     const menuButton = document.getElementById("menu-button");
     const menuOverlay = document.getElementById("menu-overlay");
     const closeMenuLink = document.getElementById("close-menu");
     const chatBotButton =  document.getElementById("chatbot-container");
     const getStartedButton = document.getElementById("get-started-button");
+    const letsButton = document.getElementById("lets-button");
 
     function fadeAndRedirect(destination) {
         // Fade out the container
@@ -67,12 +68,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     chatBotButton.addEventListener("click", function () {
-        window.location.href = "chatbot.html";
+        window.location.href = "about.html";
       });
 
       getStartedButton.addEventListener("click", function () {
         fadeAndRedirect("terms_conditions_box.html");
     });
+
+  letsButton.addEventListener("click", function () {
+      fadeAndRedirect("terms_conditions_box.html");
+  });
   
        
 });
