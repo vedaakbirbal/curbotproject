@@ -21,7 +21,8 @@ body {
   border-radius: 10px;
   background: linear-gradient(to right, #0c0c0cd3, #0c0c0cd3);
   box-shadow: 0 0 6px #21222250;
-  margin-top: 5vw;
+  margin-top: 10vw;
+  margin-bottom: 20vw;
 }
 
 .top-title {
@@ -86,8 +87,8 @@ body {
   display: flex; 
   align-items: center; 
   justify-content: space-evenly;  
-  margin-top: 10%;
-  margin-bottom: 10%; 
+  margin-top: 20%;
+  margin-bottom: 20%; 
   width: 100%;
   height: auto;
   text-align: center; 
