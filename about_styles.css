@@ -19,11 +19,13 @@ body {
   border-radius: 8px;
   margin-top: 50px;
   margin-bottom: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  font-weight: bold;
 }
 
 .mid-container p {
   font-size: clamp(1rem, 3vw, 2rem);
-  line-height: 2;
 }
 
 .mid-title {
@@ -40,7 +42,7 @@ body {
   text-align: center;
   color: #2681cc; 
   font-size: clamp(1rem, 3vw, 2rem);
-  line-height: 3;
+  line-height: 2;
   margin-top: 20px;
 }
 

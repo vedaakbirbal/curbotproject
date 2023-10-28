@@ -1,45 +1,84 @@
 body {    
   background-color: rgba(214, 214, 214, 0.95);
 }  
+.contact-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
 
-  .top-mid-container {
-    display: grid;
-    grid-template-columns: auto; 
-    grid-template-areas: 
-        "top-mid-title"      
-        "top-mid-paragraph"; 
-    margin-left: 10vw;
-    width: 80vw;
-  }
-  
-  .top-mid-title{
-    grid-area: top-mid-title;
-    text-align: center;
-      padding: 1vw;
-      margin: 1vw;
-    font-size: 4vw;
-  }
- 
-  
-  .top-mid-paragraph {
-    grid-area: top-mid-paragraph;
-    text-align: left;
-      padding: 1vw;
-      margin: 1vw;
-      font-size: 2vw;
-      margin-bottom: 10vw;
-  }
+.contact-title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
 
-  @media only screen and (max-width: 767px) {
-    .top-mid-title {
-      font-size: 5vw;
-    }
-    .top-mid-paragraph {
-      
-        font-size: 3.5vw;
-        
-    }
+.contact-info {
+  margin-bottom: 30px;
+}
 
-  }
+.contact-info p {
+  margin-bottom: 10px;
+}
 
-  
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 5px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-form h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
