@@ -43,7 +43,7 @@ body {
 }
 
 .top-paragraph {
-  font-size: clamp(0.75rem, 3vw, 3rem);
+  font-size: clamp(0.75rem, 3vw, 2.5rem);
   margin: 3%;
   height: auto;
   width: auto;
@@ -52,7 +52,7 @@ body {
 
 
 .top-img{ 
-  width: clamp(2rem, 40vmin, 15rem);  
+  width: clamp(5rem, 30vw, 25rem);  
   /* border: 1px solid #ffffff; */
   margin: 0;
   margin-right: 2vw;
@@ -62,12 +62,12 @@ body {
 .main-get-started-button {
   grid-area: main-get-started-button;
   cursor: pointer;
-  font-size: clamp(1rem, 2vw, 4rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   font-weight: bold;
   width: 30%;
   height: auto;
   margin: 1vw;
-  margin-left: 35%;
+  margin-left: 40%;
   margin-bottom: 3vw;
   padding: 8px; 
   border: 1px inset #bba947;
@@ -91,7 +91,7 @@ body {
   width: 100%;
   height: auto;
   text-align: center; 
-  font-size: clamp(0.75rem, 3vw, 2rem);
+  font-size: clamp(0.75rem, 3vw, 3rem);
 }
 
 .chatbot-container,

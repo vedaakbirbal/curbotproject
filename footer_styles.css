@@ -21,6 +21,7 @@
   margin: 0;
   border: 1px solid;
   opacity: 1;
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 .quick-menu-links {
@@ -88,7 +89,7 @@
 }
 
 .bot-img-1 {
-  height: 40px; 
+  height: clamp(2.5rem, 3vw, 4rem);
   width: auto;
   margin: 0;
   margin-right: 10px;
