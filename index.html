@@ -44,8 +44,8 @@
             </div>
             <div class="menu-row4">
                 <span class="menu-nums">7</span>
-                <button class="menu-items common-hover" id="lets-button">let's</button>
-  <button class="menu-items common-hover" id="get-started-button" onclick="redirectToStreamlit()">getStarted()</button>
+                <button class="menu-items" id="lets-button">let's</button>
+                <button class="menu-items" id="get-started-button">getStarted()</button>
             </div>          
         </div>
     </header>
@@ -74,7 +74,7 @@
                 curriculum of ECNG1009.
             </span>
         </div>
-        <button class="main-get-started-button" onclick="redirectToStreamlit()">GET STARTED</button>
+        <button class="main-get-started-button" >GET STARTED</button>
     </div>
    
     <div class="bot-container">
@@ -118,7 +118,7 @@
       <script>
         function redirectToStreamlit() {
             // Redirect to your Streamlit app URL when the button is clicked
-            window.location.href = 'http://localhost:8501';  // Change this URL to match your Streamlit app's URL
+            window.location.href = 'terms_conditions_box.html';  // Change this URL to match your Streamlit app's URL
         }
         function hoverEffect() {
             document.getElementById("get-started-button").classList.add("hovered");

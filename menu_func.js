@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuOverlay = document.getElementById("menu-overlay");
     const closeMenuLink = document.getElementById("close-menu");
     const chatBotButton =  document.getElementById("chatbot-container");
+    const getStartedButton = document.getElementById("get-started-button");
 
     function fadeAndRedirect(destination) {
         // Fade out the container
@@ -69,7 +70,9 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "chatbot.html";
       });
 
-      
+      getStartedButton.addEventListener("click", function () {
+        fadeAndRedirect("terms_conditions_box.html");
+    });
   
        
 });

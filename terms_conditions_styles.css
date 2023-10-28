@@ -48,7 +48,7 @@ button:hover {
 }
 
 
-  @media only screen and (max-width: 767px) {
+  /* @media  (width <= 767px) {
     .top-mid-title {
       font-size: 5vw;
     }
@@ -58,7 +58,7 @@ button:hover {
         
     }
 
-  }
+  } */
 
 
   
